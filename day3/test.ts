@@ -3,33 +3,33 @@ import { partOne, partTwo } from './solution';
 
 import { readFile } from 'fs/promises';
 
-describe('Day 2', () => {
+describe('Day 3', () => {
 
-  test('Rock Paper Scissors - part one - test data', async () => {
+  test('Rucksack Reorganization - part one - test data', async () => {
     const input: string = await readFile(__dirname + '/test-input.txt', 'utf8');
     const data = input.split('\n');
 
-    expect(partOne(data)).toBe(15);
+    expect(partOne(data)).toBe(157);
   });
 
-  test('Rock Paper Scissors - part one', async () => {
+  test('Rucksack Reorganization - part one', async () => {
     const input: string = await readFile(__dirname + '/input.txt', 'utf8');
     const data = input.split('\n');
 
-    expect(partOne(data)).toBe(9177);
+    expect(partOne(data)).toBe(8123);
   });
 
-  test('Rock Paper Scissors - part two - test data', async () => {
+  test('Rucksack Reorganization - part two - test data', async () => {
     const input: string = await readFile(__dirname + '/test-input.txt', 'utf8');
     const data = input.split('\n');
 
-    expect(partTwo(data)).toBe(12);
+    expect(partTwo(data)).toBe(70);
   });
 
-  test('Rock Paper Scissors - part two', async () => {
+  test('Rucksack Reorganization - part two', async () => {
     const input: string = await readFile(__dirname + '/input.txt', 'utf8');
     const data = input.split('\n');
 
-    expect(partTwo(data)).toBe(12111);
+    expect(partTwo(data)).toBe(2620);
   });
 });
