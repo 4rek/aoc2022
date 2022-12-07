@@ -61,5 +61,5 @@ export function partTwo(data: string[]): number {
 
   const diff = 30000000 - (70000000 - d['/']);
 
-  return Object.values(d).filter(i => i >= diff).sort((a, b) => b - a).filter(f => f > diff).sort((a, b) => a - b ? -1 : 1)[0];
+  return Object.values(d).filter(i => i >= diff).sort((a, b) => a - b)[0];
 }

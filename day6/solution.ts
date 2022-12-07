@@ -15,7 +15,3 @@ export function partOne(data: string, chunkSize: number): number {
 
   return counter;
 }
-
-export function partTwo(data: string): number {
-  return 2;
-}

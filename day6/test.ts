@@ -1,5 +1,5 @@
 import { describe, expect, test } from '@jest/globals';
-import { partOne, partTwo } from './solution';
+import { partOne } from './solution';
 
 import { readFile } from 'fs/promises';
 
